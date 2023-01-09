@@ -1,0 +1,20 @@
+
+<view class="backg">
+    <scroll-view class="box1" scroll-y="{{true}}">
+        <text class="text1">
+            {{data}}
+        </text>
+    </scroll-view>
+    <view class="title">
+        作业
+    </view>
+        <scroll-view class="box2" scroll-y="{{true}}">
+        <textarea class="text2" bindinput="input" maxlength="-1" value="{{answer}}">
+        </textarea>
+    </scroll-view>
+    <view class="send"  style="background:#0599e8" bindtap="send" wx:if="{{lv==-1|lv==0}}">提交</view>
+    <view class="send"  style="background:#91FC3E" wx:if="{{lv==4}}"> 优秀 </view>
+    <view class="send"  style="background:#F3FA65" wx:if="{{lv==3}}"> 良好 </view>
+    <view class="send"  style="background:#FF6614" wx:if="{{lv==2}}"> 及格 </view>
+    <view class="send"  style="background:#FF0000" wx:if="{{lv==1}}"> 不及格 </view>
+</view>

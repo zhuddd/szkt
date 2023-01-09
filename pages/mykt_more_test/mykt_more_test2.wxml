@@ -1,0 +1,29 @@
+
+<view class="frame" style="position: absolute; left: 41rpx; top: 60rpx">
+    <text class="time">测试</text>
+    <scroll-view class="tp_box" scroll-y="{{true}}">
+        <view class="tap" >
+            <view class="peoplebox" wx:for="{{memberdata}}" wx:key="openid" >
+            <view class="people"  wx:if="{{!item.cj}}">
+                <view class="text1">
+                    {{item.name}}
+                </view>
+                <view class="text2" >
+                    未完成
+                </view>          
+            </view>
+            <view class="people" bindtap="tap" data-openid="{{item.openid}}" wx:else>
+                <view class="text1">
+                    {{item.name}}
+                </view>
+                <view class="text2" >
+                    {{item.fs}}分
+                </view>           
+            </view>
+        </view>
+        </view>
+    </scroll-view>
+</view>
+<view wx:if="{{set==1}}" class="button" bindtap="end" >结束测试</view>
+<view wx:if="{{set!=1}}" class="button"  >已结束</view>
+<view class="del" bindtap="deltest" >删除测试</view>

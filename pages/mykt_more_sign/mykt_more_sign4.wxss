@@ -1,0 +1,49 @@
+/* pages/mykt_more_sign/mykt_more_sign4.wxss */
+page{
+    background: #D6D6D6;
+}
+
+.frame{
+    /* 矩形 45 */
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 680rpx;
+    height: 1250rpx;
+    border-radius: 27rpx;
+    background: #9FC1D3;
+}
+.frame1{
+    position: absolute;
+    left: 5%;
+    top: 13%;
+    width: 610rpx;
+    height: 1050rpx;
+    background: #D8D8D8;
+    border-radius: 37rpx;
+    text-align: center;
+    line-height: 1050rpx;
+    font-size: 140rpx;
+}
+.frame3{
+    position: absolute;
+    left: 8%;
+    top: 18%;
+    width: 515rpx;
+    height: 515rpx;
+    border: 2rpx solid #000000;
+    line-height: 515rpx;
+    text-align: center;
+    font-size: 50rpx;
+}
+.frame3:active{
+    background: #676666;
+}
+.time{
+    position: absolute;
+    left: 10%;
+    top: 18%;
+    width: 80%;
+    text-align: center;
+    font-size: 45rpx;
+}

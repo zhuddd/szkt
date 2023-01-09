@@ -1,0 +1,32 @@
+<view class="backg"> 
+    <view class="title">
+        抽问
+    </view>
+    <view wx:if="{{isshow}}" class='set' >
+        <view class="sj" style="background:{{backgrounda}}" bindtap="sj">
+        随机
+        </view>
+
+        <view class="sx" style="background:{{backgroundb}}"bindtap="sx">
+        顺序
+        </view>
+        <view class="qc" bindlongpress="qc">
+        长按清除
+        </view>
+
+        <view class="next" bindtap="next">
+        下一个
+        </view>
+    </view>
+   
+
+    <scroll-view class="box" scroll-y="{{true}}" style="height:{{height}}">
+        <view class="list">
+            <view class="people" wx:for="{{asklist}}" wx:key="item" >
+                <view class="text">
+                        {{item.name}}
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

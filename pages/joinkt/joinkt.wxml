@@ -1,0 +1,41 @@
+<!--pages/joinkt/joinkt.wxml-->
+<view>
+    <view wx:if="{{page==1}}" class="bj">
+        <view class="title">
+        加入课堂
+        </view>
+        <button class="button" bindtap="next" > 
+                搜索课堂
+        </button>
+        <view class="yqmtxt">
+        邀请码
+        </view>
+        <input  bindinput="input" type="text" class="yqm" maxlength="5" selection-start="2" selection-end="12" >       
+        </input>       
+        <button bindtap="qrcode" class="qrbutton">
+          扫码        
+        </button>
+    </view>
+
+    <view wx:if="{{page==2}}" class="bj">
+        <view class="title_b">
+        搜索到的课堂
+        </view>
+        <view class="button_c" bindtap="back" > 
+                取消
+        </view>
+        <scroll-view class="box" scroll-y="{{true}}">
+            <text class="txt">
+            {{msg}}
+            </text> 
+            <view class="xxbox" wx:for="{{classdata}}" wx:key="class_class_id">
+                <view class="join" bindtap="join" data-class_class_id="{{item.class_class_id}}">
+                    {{item.name}}
+                </view>
+            </view>
+                
+        </scroll-view>
+
+
+    </view>
+</view>

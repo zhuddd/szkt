@@ -1,0 +1,28 @@
+<!--pages/mykt_more_vote/mykt_more_vote2.wxml-->
+<view class="backg">
+    <view class="title">
+        {{titel}}
+    </view>
+    <scroll-view class="tp_box" scroll-y="{{true}}">
+        <view class="xxbox" wx:for="{{tp}}" wx:key="id">
+            <view class="xx">
+                {{item.data}}
+            </view>
+            <view class="ps">
+                {{item.getps}}
+            </view>
+        </view>
+    </scroll-view>
+    <view class="ren">
+        参与人数:{{ren}}
+    </view>
+    <view wx:if="{{set=='发布'}}" class="stop"  bindtap="stop">
+        结束投票
+    </view>
+    <view wx:if="{{set=='已结束'}}" class="stop" style="color:red">
+        已结束
+    </view>
+    <view class="del" bindtap="del">
+        删除投票
+    </view>
+</view>

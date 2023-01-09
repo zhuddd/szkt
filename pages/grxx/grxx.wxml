@@ -1,0 +1,29 @@
+<view class="bj">
+    <view class="k">
+    <view class="srk1">
+        <input class="input" value="{{userdata.user_name}}" auto-focus placeholder="姓名" bindinput='name'></input>
+    </view>
+    <view class="srk2">
+        <input class="input1"value="{{userdata.userid}}"  wx:if="{{userdata.is_teacher=='false'}}" auto-focus placeholder="学号" type="number" bindinput='id'></input>
+        <input class="input1" value="{{userdata.userid}}" wx:if="{{userdata.is_teacher=='true'}}" auto-focus placeholder="工号" type='number' bindinput='id'></input>
+    </view>
+    <view class="srk3">
+        <input class="input2" value="{{userdata.school_1}}"auto-focus placeholder="所在学院" bindinput='school_1'></input>
+    </view>
+    <view class="srk4">
+        <input class="input3" value="{{userdata.school_2}}"auto-focus placeholder="所在专业" bindinput='school_2'></input>
+    </view>
+    <view class="srk">
+        <input class="input4" value="{{userdata.teacher_name}}" wx:if="{{userdata.is_teacher=='false'}}" auto-focus placeholder="辅导员" bindinput='teacher_name'></input>
+        <input class="input4"  value="{{userdata.teach}}"wx:if="{{userdata.is_teacher=='true'}}" auto-focus placeholder="教授课程" bindinput='teach'></input>
+    </view>
+    <view class="jrzy" bindtap='next'>修改信息</view>
+    <view class="xb">
+    <radio-group name="radio">
+        性别
+        <view class="nan"><label><radio checked="{{ userdata.sex=='b' }}"  value="radio1" bindtap='nan'/>男</label></view>
+        <view class="nv"><label><radio checked="{{ userdata.sex=='a' }}" value="radio2" bindtap='nv'/>女</label></view>
+    </radio-group>
+    </view>
+    </view>
+</view>

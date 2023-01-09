@@ -1,0 +1,113 @@
+<!--pages/mykt/mykt.wxml-->
+
+
+<swiper class="bj">
+
+        <!-- 上课 学生-->
+       
+    <swiper-item wx:if="{{onclass}}">
+        <view class="imgbox" animation="{{ani}}" >
+            <image class="ppt2" src="{{pageurl}}"  mode="aspectFit">
+            </image>
+        </view>
+            <view class="foot" >
+                <view class="footright" bindtap="more">更多</view>
+            </view>
+    </swiper-item>
+
+        <!-- 上课 教师-->
+    <swiper-item wx:if="{{type==3}}">
+        <view class="imgbox2">
+            暂未开始
+            <image class="ppt3" src="{{pageurl}}"  mode="aspectFit">
+            </image>
+        </view>
+        <scroll-view  scroll-y="true" class="inclass" scroll-into-view="{{toend}}" style="height:700rpx;">
+            <view wx:for="{{maildata}}" wx:key="time">
+            {{item.name}}   :   {{item.msg}}
+            </view>
+            <view class='end' id='toend'></view>
+        </scroll-view>
+        <view class="lbtn" bindtap="back" wx:if="{{mylevel==1}}">上一张</view>
+        <view class="mbtn" bindlongpress="stop" wx:if="{{mylevel==1}}">长按结束</view>
+        <view class="rbtn" bindtap="next" wx:if="{{mylevel==1}}">下一张</view>
+        
+        <view class="foot" >
+            <view class="footright" bindtap="more">更多</view>
+            <view class="showksbox" bindtap="showksbox">^</view>
+        </view>
+        <view  wx:if="{{ksbox}}">
+            <view class="closeksbox" bindtap="showksbox"></view>
+            <view class="ksbox">
+                <view class="title" wx:for="{{tap_list}}" wx:key="name"   >
+                    <view class="title_txt" bindtap="tap" data-url="{{item.url}}" data-name="{{item.name}}">
+                        {{item.name}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </swiper-item>
+
+
+        <!-- 上课 教师选择ppt-->
+    <swiper-item wx:if="{{type==2}}">
+        <scroll-view  scroll-y="true" class="pptlistbox">
+            <radio-group bindchange="radiochoose">
+                <view class='pptlist' wx:for="{{urllist}}" wx:key="item" >
+                        <image src="{{item.url}}" class="ppt"mode="widthFix"></image>
+                        <radio class="radio" value="{{item.page}}" >{{item.no}}</radio>
+                        <view ></view>
+                </view>
+            </radio-group>
+        </scroll-view>
+        <view class="lbtn" bindtap="upload">重新上传</view>
+        <view class="rbtn" bindtap="play">开始播放</view>
+        <view class="foot" >
+            <view class="footright" bindtap="more">更多</view>
+        </view>
+    </swiper-item>
+
+        <!-- 上课 教师上传ppt-->
+    <swiper-item wx:if="{{type==1}}">
+        <view  class="up-ppt" bindtap="upload">
+        上传课件
+        </view>
+        <view class="foot" >
+            <view class="footright" bindtap="more">更多</view>
+        </view>
+    </swiper-item>
+
+
+    <!-- 聊天 -->
+    <swiper-item >
+    <!-- scroll-view来实现页面拖动 -->
+        <scroll-view  scroll-y="true" class="msgbox" scroll-into-view="{{toend}}" style="height:1350rpx;">
+            <view wx:for="{{maildata}}" wx:key="time">
+
+                <block wx:if="{{item.set=='r'}}">
+                    <view class="msg" id="msg">
+                            <view class="rithead">{{item.name}}</view>
+                            <view  class="ritTxt">{{item.msg}}</view>
+                    </view>
+                </block>
+
+                <block wx:if="{{item.set=='l'}}" >
+                    <view class="msg">
+                        <view class="lfthead">{{item.name}}</view>
+                        <view  class="lftTxt">{{item.msg}}</view>
+                    </view>               
+                </block>
+            
+            </view>
+            <view class='end' id='toend'></view>
+        </scroll-view>
+        <view class="foot" >
+        <input class="footinput" type="text" placeholder="请输入内容" bindinput="msginput" value="{{msg}}" >
+
+        </input>
+        <view class="footright" bindtap='sedmsg'>发送</view>
+        </view>
+
+    </swiper-item>
+
+</swiper>

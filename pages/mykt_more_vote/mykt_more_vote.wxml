@@ -1,0 +1,20 @@
+<!--pages/mykt_more_vote/mykt_more_vote.wxml-->
+<view class="backg">
+    <scroll-view class="list" scroll-y="{{true}}">
+        <view class="tp" wx:for="{{tp}}" wx:key="id">
+            <view class="tp_box" bindtap="tap" data-id="{{item.voteid}}" data-set="{{item.set}}">
+                <view class="tp_txt">
+                    {{item.title}}
+                </view>
+                <view class="set" wx:if="{{item.set=='发布'}}" style="color:green">投票中</view>
+                <view class="set" wx:if="{{item.set=='已结束'}}" style="color:red">已结束</view>
+                <view class="set" wx:if="{{item.set=='保存'}}" style="color:red">预设</view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="title">
+        我的投票
+    </view>
+</view>
+<view class="add_tp" wx:if="{{showadd}}" bindtap="add_tap">+
+</view>

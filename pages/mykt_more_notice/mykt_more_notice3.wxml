@@ -1,0 +1,15 @@
+<!--pages/mykt_more_notice/mykt_more_notice3.wxml-->
+<view class="backg">
+    <scroll-view class="notice_box" scroll-y="{{true}}">
+        <textarea class="text" bindinput="input" >
+        </textarea>
+    </scroll-view>
+    <view class="title">
+        新建公告
+    </view>
+    <view class="add" bindtap="add">
+    发布
+    </view>
+</view>
+
+  

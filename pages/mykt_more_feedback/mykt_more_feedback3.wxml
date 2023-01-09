@@ -1,0 +1,13 @@
+<!--pages/mykt_more_feedback/mykt_more_feedback3.wxml-->
+<view class="backg">
+    <scroll-view class="notice_box" scroll-y="{{true}}">
+        <textarea class="text" bindinput="input" >
+        </textarea>
+    </scroll-view>
+    <view class="title">
+        新建反馈
+    </view>
+    <view class="add" bindtap="add">
+    发布
+    </view>
+</view>

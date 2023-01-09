@@ -1,0 +1,16 @@
+<!--pages/mykt_more_notice/mykt_more_notice2.wxml-->
+<view class="backg">
+    <scroll-view class="fb_box" scroll-y="{{true}}">
+        <text class="text">
+            {{List.data}}
+        </text>
+    </scroll-view>
+    <view class="title">
+        学生反馈
+    </view>
+    <view class="del"  bindtap="del">
+        删除
+    </view>
+</view>
+
+  

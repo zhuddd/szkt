@@ -1,0 +1,122 @@
+/* pages/mykt_more_member/mykt_more_member.wxss */
+page{
+    background: #D6D6D6;
+}
+.backg{
+    position: absolute;
+    left: 40rpx;
+    top: 2.5%;
+    width: 670rpx;
+    height: 95%;
+    border-radius: 27rpx;
+    background: #9FC1D3;
+    
+}
+.backg2{
+    position: absolute;
+    left: 15rpx;
+    top: 10%;
+    width: 640rpx;
+    height: 88%;
+    border-radius: 63rpx;
+    background: #D8D8D8;
+}
+.peoplebox{
+    position: relative;
+    left: 45rpx;
+    top: 80rpx;
+    width: 550rpx;
+    height: 130rpx;
+    box-sizing: border-box;
+}
+.people{
+    position: relative;
+    top: 15rpx;
+    height: 100rpx;
+    background: #84CAF6;
+    box-sizing: border-box;
+    border-radius: 30rpx;
+}
+.text1{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 30%;
+    height: 70%;
+    font-size: 40rpx;
+}
+.text2{
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    width: 30%;
+    height: 70%;
+    font-size: 40rpx;
+}
+.text3{
+    position: absolute;
+    top: 15%;
+    left: 90%;
+    width: 25rpx;
+    height: 70%;
+    background: #000000;
+}
+.title{
+    text-align: center;
+    position: absolute;
+    top: 3%;
+    width: 100%;
+    font-size: 50rpx;
+    color: #3D3D3D;
+}
+.more1{
+    position: absolute;
+    top: 80%;
+    height: 10%;
+    width: 100%;
+    border-radius: 100rpx;
+    background: #ffffff;
+}
+.more2{
+    position: absolute;
+    top: 20%;
+    height: 60%;
+    left: 5%;
+    width: 40%;
+    border-radius: 30rpx;
+    background: #84CAF6;
+}
+.more2:active{
+    background: #00B0FF;
+}
+.more2_{
+    text-align: center;
+    font-size: 40rpx;
+    color: #000000;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.more3{
+    text-align: center;
+    font-size: 40rpx;
+    color: #ff0000;
+    position: absolute;
+    top: 20%;
+    height: 60%;
+    left: 55%;
+    width: 40%;
+    border-radius: 30rpx;
+    background: #84CAF6;
+}
+.more3:active{
+    background: #538eb3;
+}
+.more3_{
+    text-align: center;
+    font-size: 40rpx;
+    color: #ff0000;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}

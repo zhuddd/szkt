@@ -1,0 +1,12 @@
+
+.w100{width:100%;}
+.h100{height:100%;}
+.w33{width:33.3%;}
+.h33{height:33.3%;}
+.flexCenter {
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:center;
+	flex-wrap:wrap;
+}

@@ -1,0 +1,25 @@
+<view class="bj">
+        <view class="backg">
+            <scroll-view class="list" scroll-y="{{true}}">
+                <view class="sign" wx:for="{{task}}" wx:key="signid" >
+                    <view class="sign_box" bindtap="tap" data-taskid="{{item.taskid}}" >
+                        <view class="sign_txt">
+                            {{item.data}}
+                        </view>
+                        <!-- <view wx:if="{{item.signset.end==1}}"style="background:#fa0000" class="end">
+                        已结束
+                        </view>
+                        <view wx:if="{{item.signset.end==0}}"style="background:#36fa00" class="end">
+                        进行中
+                        </view> -->
+                    </view>
+                </view>
+            </scroll-view>
+            <view class="title">
+                作业
+            </view>
+        </view>
+</view>
+<view class="add_task" wx:if="{{showadd}}" bindtap="add_tap">+
+</view>
+

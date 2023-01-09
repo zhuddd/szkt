@@ -1,0 +1,1 @@
+<web-view src="{{fileurl}}" class="web" bindmessage="msgHandler"></web-view>

@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>文件上传</title>
+        <meta charset=“utf-8">
+        <style>
+        .fileinput-button {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            background-color:#07c160;
+            color: #fff;
+            border-radius: 26.64rem;
+            line-height: 10rem;
+            width: 30%;
+        }
+
+        .upinput{
+            position:absolute;
+            top:0%;
+            right:0%;
+            opacity: 0%;
+        }
+        .fileinput{
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            background-color:#07c160;
+            color: #fff;
+            border-radius: 26.64rem;
+            line-height: 10rem;
+            width: 30%;
+        }
+        .upbutton{
+            position:absolute;
+            top:0%;
+            right:0%;
+            opacity: 0;
+
+        }
+        .body{
+            position: absolute;
+            top:30%;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size:60px;
+        }
+    </style>
+        <script>
+            function choose(){
+                document.getElementById("file").click();
+            }
+            function on_progress(evt) {       
+                if(evt.lengthComputable) {
+                    var percent = Math.round((evt.loaded)*100 / evt.total);
+                    document.getElementById('progress').value = percent;
+                    if(percent == 100) {
+                        alert("文件上传成功");
+                        
+                    }
+                }
+            }
+            function upload() {
+                var xhr = new XMLHttpRequest();
+                var file = document.getElementById('file').files[0];   //取得文件数据，而.file对象只是文件信息
+                var classid=document.getElementById("classid").value;
+                var form = new FormData();   //FormData是HTML5为实现序列化表单而提供的类，更多细节可自行查询
+                form.append('file',file);   //这里为序列化表单对象form添加一个元素，即file
+                xhr.upload.addEventListener('progress',on_progress,false);     //xhr对象含有一个upload对象，它有一个progress事件，在文件上传过程中会被不断触发，我们为这个事件对应一个处理函数，每当事件触发就会调用这个函数，于是便可利用这个函数来修改当前进度，更多细节可自行查询
+                xhr.open('POST','/attendclass/updata/?classid='+classid,true);  //请将url改成上传url
+                xhr.setRequestHeader('X-CSRFTOKEN','{{ request.COOKIES.csrftoken }}');   //此处为Django要求，可无视，或者换成相应后台所要求的CSRF防护，不是django用户请去掉
+                xhr.send(form);   //发送表单
+            }
+        
+        </script>
+    </head>
+    <body class="body">
+
+        <p id="filename">未选择文件</p>
+        {% csrf_token %}
+
+        <div align="center">
+            <span id="choose" class="fileinput-button" onclick="choose()">
+                选择文件
+            </span>
+        </div>
+        <progress id="progress" value="0" max="100"></progress>
+
+        <div align="center">
+            <span id="up" class="fileinput" onclick="upload()">
+                上传文件
+            </span>
+        </div>
+
+        <form method="post" action=""
+            enctype="multipart/form-data">
+            <input id="file" type="file" name="files" class="upinput"
+                onchange="document.getElementById('filename').innerHTML=this.files[0].name"
+                accept="application/vnd.openxmlformats-officedocument.presentationml.presentation">
+            <input id="classid" type="text" class="upinput" name="classid" value="{{classid}}"></input>
+            <input id="classid" type="text" class="upinput" name="classid" value="{{msg}}"></input>
+        </form> 
+
+
+    </body>
+
+</html>

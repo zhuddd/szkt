@@ -1,0 +1,86 @@
+/* pages/mykt_more_vote/mykt_more_vote2.wxss */
+
+.backg{
+    position: absolute;
+    left: 40rpx;
+    top: 2.5%;
+    width: 670rpx;
+    height: 95%;
+    border-radius: 27rpx;
+    background: #9FC1D3;
+}
+.tp_box{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    width: 94%;
+    height: 75%;
+    font-size: 35rpx;
+    overflow: hidden;
+    word-break: break-all;
+    background-color: #ededed;
+    border-radius: 37rpx;
+}
+.xxbox{
+    position: relative;
+    top:5%;
+    height: 120rpx;
+}
+.xx{
+    position: relative;
+    left:5%;
+    width: 80%;
+    height: 90rpx;
+    font-size: 35rpx;
+    overflow: hidden;
+    word-break: break-all;
+    background-color: #84CAF6;
+    border-radius: 37rpx;
+    text-align: center;
+    line-height: 100rpx;
+}
+.ps{
+    position: absolute;
+    top:20%;
+    right: 2%;
+    width: 15%;
+    height: 40%;
+    font-size: 35rpx;
+    text-align: center;
+}
+.ren{
+    position: absolute;
+    top:88%;
+    left: 4%;
+    width: 40%;
+    font-size: 35rpx;
+    text-align: center;
+}
+.title{
+    position: absolute;
+    left: 10%;
+    top: 3%;
+    width: 80%;
+    font-size: 40rpx;
+}
+.stop{
+    position: absolute;
+    top:88%;
+    right: 4%;
+    width: 40%;
+    font-size: 40rpx;
+    text-align: center;
+    border-radius: 37rpx;
+    border: 1px solid #000000;
+}
+.del{
+    position: absolute;
+    top:94%;
+    right: 4%;
+    width: 40%;
+    font-size: 40rpx;
+    text-align: center;
+    border-radius: 37rpx;
+    color: red;
+    border: 1px solid #000000;
+}

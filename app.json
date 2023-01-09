@@ -1,0 +1,75 @@
+{
+    "pages": [
+        "pages/zjm/zjm",
+        "pages/dl/dl",
+        "pages/xzsf/xzsf",
+        "pages/xx/xx",
+        "pages/sfxt/sftx",
+        "pages/mykt/mykt",
+        "pages/mykt/uploadppt",
+        "pages/mykt_more/mykt_more",
+        "pages/mykt_more_notice/mykt_more_notice",
+        "pages/mykt_more_notice/mykt_more_notice2",
+        "pages/mykt_more_notice/mykt_more_notice3",
+        "pages/mykt_more_task/mykt_more_task",
+        "pages/mykt_more_task/dotask",
+        "pages/mykt_more_task/addtask",
+        "pages/mykt_more_task/onetask",
+        "pages/mykt_more_task/onetasklook",
+        "pages/mykt_more_ask/mykt_more_ask",
+        "pages/mykt_more_file/mykt_more_file",
+        "pages/mykt_more_file/mykt_more_upfile",
+        "pages/mykt_more_feedback/mykt_more_feedback",
+        "pages/mykt_more_feedback/mykt_more_feedback2",
+        "pages/mykt_more_feedback/mykt_more_feedback3",
+        "pages/mykt_more_sign/mykt_more_sign",
+        "pages/mykt_more_sign/mykt_more_sign2",
+        "pages/mykt_more_sign/mykt_more_sign3",
+        "pages/mykt_more_sign/mykt_more_sign4",
+        "pages/mykt_more_vote/mykt_more_vote",
+        "pages/mykt_more_vote/mykt_more_vote2",
+        "pages/mykt_more_vote/mykt_more_vote3",
+        "pages/mykt_more_vote/mykt_more_vote4",
+        "pages/mykt_more_vote/mykt_more_vote5",
+        "pages/mykt_more_member/mykt_more_member",
+        "pages/mykt_more_member/mykt_more_member_class",
+        "pages/mykt_more_set/mykt_more_set",
+        "pages/mykt_more_test/mykt_more_test",
+        "pages/mykt_more_test/mykt_more_test2",
+        "pages/mykt_more_test/mykt_more_test4",
+        "pages/mykt_more_test/mykt_more_test5",
+        "pages/addkt/addkt",
+        "pages/joinkt/joinkt",
+        "pages/wd/wd",
+        "pages/grxx/grxx"
+
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#4CC1F7",
+        "navigationBarTitleText": "数字课堂",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "list": [{
+                "pagePath": "pages/zjm/zjm",
+                "text": "首页",
+                "iconPath": "images/home.png",
+                "selectedIconPath": "images/home1.png"
+            },
+            {
+                "pagePath": "pages/xx/xx",
+                "text": "消息",
+                "iconPath": "images/消息.png",
+                "selectedIconPath": "images/消息 (1).png"
+            },
+            {
+                "pagePath": "pages/wd/wd",
+                "text": "我的",
+                "iconPath": "images/My.png",
+                "selectedIconPath": "images/My (1).png"
+            }
+        ]
+    }
+}

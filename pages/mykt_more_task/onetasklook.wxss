@@ -1,0 +1,154 @@
+/* pages/zuoye4/zuoye4.wxss */
+.v1 {
+  left: 5%;
+  top: 3%;
+  width: 90%;
+  height: 93%;
+  border-radius: 36rpx;
+  background: #9FC1D3;
+}
+
+.v2 {
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 93%;
+  border-radius: 37rpx;
+  background: #D8D8D8;
+}
+
+.t1 {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 60%;
+  font-size: 45rpx;
+  border: 1px solid #000000;
+  word-break: break-all;
+}
+
+.t2 {
+  position: relative;
+  left: 10%;
+  top: 3%;
+
+}
+.question{
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  height: 35%;
+  background: #aaaaaa;
+  border-radius: 37rpx;
+}
+.close{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 50rpx;
+  height: 50rpx;
+  font-size: 40rpx;
+  background: #ff0101;
+  text-align: center;
+  border-radius: 37rpx;
+}
+.q1{
+  position: absolute;
+  top: 15%;
+  left: 12%;
+  width: 76%;
+  height: 70%;
+  font-size: 40rpx;
+  word-break: break-all;
+}
+.btn1 {
+  position: absolute;
+  left: 25%;
+  top: 85%;
+  width: 50%;
+  height: 8%;
+  border-radius: 60rpx;
+  background: #4CC1F7;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+
+.btn2 {
+  right: 10%;
+  top: 70%;
+
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  /*fixed属性值的解释：相对于我们当前的界面进行绝对定位，不随屏幕的滑动而滑动*/
+  top: 0;
+  /*top=0和left=0的作用是确认组件4个定点的一个坐标，如果不进行确认则该组件前面的组件会影响它*/
+  left: 0;
+  background: #000000;
+  opacity: 0.2;
+  /*设置背景的透明度（取值范围为0~1）*/
+  overflow: hidden;
+  /*该属性的功能是隐藏溢出，就是当我们现在的这个组件里面有其他组件，并且其他组件的宽或者高大于我们当前组件的宽或高时（按照正常情况，父组件的宽高都为0，没有被子组件撑起来，故不会显示），正常显示子组件，并同时正常显示父组件*/
+  z-index: 1000;
+  /*堆叠顺序,有时候我们设置的组件可能会有重叠的部分，那重叠的部分到底是显示哪一个组件呢？这就得靠我们的z-index属性了，z-index的属性值越高则它就越容易显示在我们的页面。注意点：只有在我们设置了position属性时，z-index才会起效果，否则是不会出现效果的*/
+}
+
+.box {
+  height: 50%;
+  /*设置弹窗的宽和高*/
+  width: 100%;
+  overflow: hidden;
+  /*隐藏溢出*/
+  position: fixed;
+  /*以当前页面为参考物，进行页面的固定*/
+  bottom: 0;
+  /*4个定点中一个定点的确认*/
+  left: 0;
+  z-index: 2000;
+  /*堆叠顺序*/
+  background: #f8f3f3;
+  /*背景颜色*/
+  text-align: center;
+  /*组件内部字体居中*/
+}
+
+.b1 {
+  top: 5%;
+  position: relative;
+  width: 80%;
+  height: 15%;
+  border-radius: 21px;
+  background: #91FC3E;
+}
+
+.b2 {
+  top: 10%;
+  position: relative;
+  width: 80%;
+  height: 15%;
+  border-radius: 21px;
+  background: #F3FA65;
+}
+
+.b3 {
+  top: 15%;
+  position: relative;
+  width: 80%;
+  height: 15%;
+  border-radius: 21px;
+  background: #FF6614;
+}
+
+.b4 {
+  top: 20%;
+  position: relative;
+  width: 80%;
+  height: 15%;
+  border-radius: 21px;
+  background: #FF0000;
+}

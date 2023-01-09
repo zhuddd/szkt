@@ -1,0 +1,25 @@
+/* pages/dl/dl.wxss */
+page{
+    background: #4CC1F7;
+}
+.dl{
+    position: absolute;
+    top:8%;
+    width: 100%;
+    text-align: center;
+    font-size: 150rpx;
+}
+.login {
+    position: absolute;
+    left: 212rpx;
+    top: 1077rpx;
+    width: 308rpx;
+    height: 103rpx;
+    border-radius: 26rpx;
+    background: #D8D8D8;
+    text-align: center;
+    line-height: 103rpx;
+}
+.login:active {
+    background: #989898;
+}

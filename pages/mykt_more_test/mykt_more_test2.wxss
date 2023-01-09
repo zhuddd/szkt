@@ -1,0 +1,128 @@
+page{
+    background: #D6D6D6;
+}
+.frame{
+    /* 矩形 45 */
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 670rpx;
+    height: 93%;
+    border-radius: 27rpx;
+    background: #9FC1D3;
+}
+.time{
+    position: absolute;
+    top:2%;
+    width: 100%;
+    height: 56rpx;
+    font-size: 50rpx;
+    text-align: center;
+}
+.quantity{
+    position: absolute;
+    left: 62%;
+    top: 4%;
+    width: 300rpx;
+    height: 56rpx;
+    font-size: 40rpx;
+}
+
+.tp_box{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    width: 94%;
+    height: 78%;
+    font-size: 35rpx;
+    overflow: hidden;
+    word-break: break-all;
+    background-color: #ededed;
+    border-radius: 37rpx;
+}
+.tap{
+    position: absolute;
+    top:5%;
+    box-sizing: border-box;
+    display:flex; 
+    flex-wrap:wrap;
+}
+.title{    
+    position: relative;
+    width:315rpx;
+    height: 170rpx;
+    box-sizing: border-box;
+}
+.title_txt{
+    position:absolute ;
+    height: 120rpx;
+    left:31.5rpx;
+    width: 252rpx;
+    border-radius: 27rpx;
+    text-align: center;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 41rpx;
+    line-height: 120rpx;
+    border: 1px solid #000000;
+}
+.button{
+    position: absolute;
+    right: 10%;
+    top: 88%;
+    width: 250rpx;
+    height: 80rpx;
+    border-radius: 23rpx;
+    background: #D4D4D4;
+    box-sizing: border-box;
+    border: 1px solid #FF0000;
+    text-align: center;
+    line-height: 80rpx;
+    font-size: 45rpx;
+    color: #FF0000;
+}
+.del{
+    position: absolute;
+    left: 10%;
+    top: 88%;
+    width: 250rpx;
+    height: 80rpx;
+    border-radius: 23rpx;
+    background: #D4D4D4;
+    box-sizing: border-box;
+    border: 1px solid #FF0000;
+    text-align: center;
+    line-height: 80rpx;
+    font-size: 45rpx;
+    color: #FF0000;
+}
+.peoplebox{
+    position: relative;
+    left: 45rpx;
+    width: 550rpx;
+    height: 130rpx;
+    box-sizing: border-box;
+}
+.people{
+    position: relative;
+    top: 15rpx;
+    height: 100rpx;
+    background: #84CAF6;
+    box-sizing: border-box;
+    border-radius: 30rpx;
+}
+.text1{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 30%;
+    height: 70%;
+    font-size: 40rpx;
+}
+.text2{
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    width: 30%;
+    height: 70%;
+    font-size: 40rpx;
+}

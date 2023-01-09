@@ -1,0 +1,43 @@
+<!--pages/mykt_more_member/mykt_more_member.wxml-->
+<view class="backg" >
+    <scroll-view class="backg2" scroll-y="{{true}}">
+        <view class="peoplebox" wx:for="{{classdata}}" wx:key="name" >
+            <view class="people"   >
+                <view class="text1">
+                    {{item.name}}
+                </view>
+                <view class="text2" wx:if="{{item.level==1}}" >
+                    教师
+                </view>
+                <view class="text2" wx:if="{{item.level==2}}" bindtap="more" data-level="{{item.level}}" data-id="{{item.openid}}">
+                    管理员
+                </view>
+                <view class="text2" wx:if="{{item.level==3}}" bindtap="more" data-level="{{item.level}}" data-id="{{item.openid}}">
+                    学生
+                </view>               
+            </view>
+        </view>
+    </scroll-view>
+    <view class="more1" wx:if="{{stuset}}" >
+
+        <view class="more2" bindtap="more_a">
+            <view class="more2_" wx:if="{{stulevel==2}}" >
+            取消管理员
+            </view>
+            <view class="more2_" wx:if="{{stulevel==3}}" >
+            设为管理员
+            </view>
+        </view>
+
+        <view class="more3" bindlongpress="more_b">
+            <view class="more3_">
+            长按踢出成员
+            </view>
+        </view>        
+    </view>
+
+
+    <view class="title">成员管理</view>
+</view>     
+
+  

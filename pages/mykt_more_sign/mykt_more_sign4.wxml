@@ -1,0 +1,15 @@
+<!--pages/mykt_more_sign/mykt_more_sign4.wxml-->
+<view class="frame">
+    <view class="frame1" wx:if="{{!isqd}}">
+        <view class="frame3" wx:if="{{signset.set=='ss'}}">
+            <ssmm bindgetlock="getlock"></ssmm>
+        </view>
+        <view class="frame3" bindtap="qd" wx:if="{{signset.set=='pt'}}">
+            点击签到
+        </view>
+    </view>
+    <view class="frame1" wx:if="{{isqd}}">
+    已签到
+    </view>
+    <view class="time">{{time}}</view>
+</view>

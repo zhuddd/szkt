@@ -1,0 +1,66 @@
+<!--pages/mykt_more_test/mykt_more_test4.wxml-->
+<view class="backg" wx:if="{{!fabu}}">
+    <view class="title2" bindtap="fabu">发布</view>
+    <view wx:if='{{group}}'>
+        <view class="title">共{{questionList.length}}题</view>
+        <scroll-view class="box" scroll-y="{{true}}" >
+            <view class="list">
+                <view class="people" wx:for="{{questionList}}" wx:key="id" wx:for-index='no'>
+                    <view class="text" bindtap='open' data-id='{{no}}'>
+                            {{no+1}}
+                    </view>
+                </view>
+                <view class="people" >
+                    <view class="text2" bindtap='addquestion'>+</view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view wx:else>
+        <scroll-view class="tp_box" scroll-y="{{true}}" >
+            <textarea class='question' auto-height="true" placeholder='请输入问题' value="{{questionList[index].question}}" bindinput="questioninput" maxlength='-1'>
+            </textarea>
+            <checkbox-group  bindchange="check" >
+            <view class="xxbox" wx:for="{{questionList[index].option}}" wx:key="id" wx:for-index="no">
+                    <block >
+                        <view class="lfthead" bindlongpress="delxx" data-id="{{no}}" >{{xx[no]}}、</view>
+                        <textarea class="input" auto-height="true" type="text" bindinput="optioninput" data-id="{{no}}" value='{{item.data}}'maxlength='-1'>
+                            
+                        </textarea>
+                    </block>
+                    <checkbox class='check' value="{{no}}" checked="{{item.isanswer}}"/>
+                </view>
+            </checkbox-group>
+            <view class="xxbox" >
+                <view class="add" bindtap="add">
+                添加选项
+                </view>
+            </view>
+            <view class="xxbox" >
+                <view class="add" bindtap="del">
+                删除本题
+                </view>
+            </view>
+        </scroll-view>
+        <view class="title">第{{index+1}}题</view>
+        <view class="btn">
+                <button class="btn0" bindtap="list"><view class='btnname'>返回列表</view></button>
+                <button class="btn1" bindtap="back"><view class='btnname'>上一题</view></button>
+                <button class="btn2" bindtap="next"><view class='btnname'>下一题</view></button>
+        </view>
+    </view>
+</view>
+<view class="backg" wx:else>
+    <view class="title">测试设置</view>
+    <view class="title2" bindtap="fabu">取消</view>
+    <view class="tp_box" >
+            <view class="settitle">测试标题:</view>
+            <textarea class="testtitle" type="text" placeholder="{{title2}}" value="{{title}}" bindinput="titleinput">
+            </textarea>
+            <radio-group  bindchange="testset" >
+                <radio class="radio1" value="true" checked="{{kaishi=='true'}}">直接开始</radio>
+                <radio class="radio2" value="false" checked="{{kaishi=='false'}}">保存草稿</radio>
+            </radio-group>
+    </view>
+    <button class="button" bindtap="endtap"><view class='btnname'>提交</view></button>
+</view>

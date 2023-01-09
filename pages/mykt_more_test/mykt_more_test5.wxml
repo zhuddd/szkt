@@ -1,0 +1,96 @@
+<view class="backg" wx:if="{{!do}}"> 
+    <view class="title">
+        {{titel}}
+    </view>
+    <view  wx:if="{{group}}">
+    <scroll-view class="box2" scroll-y="{{true}}" >
+        <view class="list">
+            <view class="people" wx:for="{{questionList}}" wx:for-index="no">
+                <view class="text" bindtap='open' data-no='{{no}}'wx:if="{{item.check}}" style="background:#45b5f1;">
+                        {{no+1}}
+                </view>
+                <view class="text" bindtap='open' data-no='{{no}}'wx:else style="background: #c8c8c8;">
+                        {{no+1}}
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <button class="button" bindtap="endtap"><view class='btnname'>提交</view></button>
+    </view>
+    <view wx:else>
+        <scroll-view class="box2" scroll-y="{{true}}" >
+            <view class="question" >{{index+1}}、{{questionList[index].question}}{{questionList[index].type==1?"【单选】":"【多选】"}}
+            </view>
+            <view>
+                <radio-group  bindchange="check" wx:if="{{questionList[index].type == 1}}">
+                    <label class="choosebox" wx:for="{{questionList[index].option}}" wx:for-index="key"  >
+                        <radio value="{{key}}" checked="{{item.checked}}"/>{{xx[key]}}、{{item.data}}
+                    </label>
+                </radio-group>
+                <checkbox-group  bindchange="check" wx:else>
+                    <label class="choosebox" wx:for="{{questionList[index].option}}" wx:for-index="key"  >
+                        <checkbox value="{{key}}" checked="{{item.checked}}"/>{{xx[key]}}、{{item.data}}
+                    </label>
+                </checkbox-group>
+            </view>
+        </scroll-view>
+        <view class="btn">
+            <button class="btn0" bindtap="back"><view class='btnname'>返回列表</view></button>
+            <button class="btn1" bindtap="pre"><view class='btnname'>上一题</view></button>
+            <button class="btn2" bindtap="next"><view class='btnname'>下一题</view></button>
+        </view>
+    </view>
+</view>
+
+<view class="backg" wx:else> 
+    <view wx:if="{{(!group && set!=1)|| (!group && superuser) }}">
+        <view class="title" style="top:50rpx">
+            {{titel}}
+        </view>
+        <scroll-view class="box2" scroll-y="{{true}}" >
+            <view class="question" >{{index+1}}、{{questionList[index].question}}{{questionList[index].type==1?"【单选】":"【多选】"}}
+            </view>
+            <view>
+                <view class="xxbox" wx:for="{{questionList[index].option}}" wx:key="id" wx:for-index="no">
+                    <block >
+                        <view class="lfthead" bindlongpress="delxx" data-id="{{no}}" >{{xx[no]}}、</view>
+                        <view class="input" wx:if="{{item.checked && item.isanswer}}" style="background:#36fa00">
+                            {{item.data}}
+                        </view>
+                        <view class="input" wx:elif="{{item.checked && !item.isanswer}}" style="background:#fa0000">
+                            {{item.data}}
+                        </view>
+                        <view class="input" wx:elif="{{!item.checked && item.isanswer}}" style="background:#F3FA65">
+                            {{item.data}}
+                        </view>
+                        <view class="input" wx:else>
+                            {{item.data}}
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </scroll-view>
+        <view class="btn">
+            <button class="btn0" bindtap="back"><view class='btnname'>返回列表</view></button>
+            <button class="btn1" bindtap="pre"><view class='btnname'>上一题</view></button>
+            <button class="btn2" bindtap="next"><view class='btnname'>下一题</view></button>
+        </view>
+    </view>
+    <view  wx:else>
+        <view class="title" style="top:50rpx">
+            正确率：{{cj[1]}}
+        </view>
+        <scroll-view class="box2" scroll-y="{{true}}" >
+            <view class="list">
+                <view class="people" wx:for="{{questionList}}" wx:for-index="no">
+                    <view class="text" bindtap='open' data-no='{{no}}'wx:if="{{cj[2][no]}}" style="background:#36fa00;">
+                            {{no+1}}
+                    </view>
+                    <view class="text" bindtap='open' data-no='{{no}}'wx:else style="background: #fa0000;">
+                            {{no+1}}
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

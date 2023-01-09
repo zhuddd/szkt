@@ -1,0 +1,10 @@
+<view class="xzsf">
+  <view class="sfxz">选择你的身份</view>
+    <view class="xz1" bindtap='stu'>
+      学生
+    </view>
+    <view class="xz2" bindtap='tea'>
+      教师
+    </view>
+
+</view>

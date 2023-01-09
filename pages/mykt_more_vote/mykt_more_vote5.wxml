@@ -1,0 +1,41 @@
+<!--pages/mykt_more_vote/mykt_more_vote5.wxml-->
+<view class="backg">
+    <view class="title">
+        {{title}}
+    </view>
+
+    <scroll-view class="tp_box" scroll-y="{{true}}" wx:if="{{tpset==0}}">
+        <checkbox-group bindchange='check'>
+        <view class="xxbox" wx:for="{{tpdata}}" wx:key="id">
+            <view class="xx">
+                {{item.data}}
+            </view>
+            <view class="ps">
+                <checkbox value="{{item.id}}" checked="{{item.checked}}"/>
+            </view>
+        </view>
+        </checkbox-group>
+    </scroll-view>
+
+    <scroll-view class="tp_box" scroll-y="{{true}}" wx:else>
+        <view class="xxbox" wx:for="{{tpdata}}" wx:key="id">
+            <view class="xx2">
+                {{item.data}}
+            </view>
+            <view class="ps2">
+                {{item.getps}}
+            </view>
+        </view>
+    </scroll-view>
+
+    <view wx:if="{{tpset==0}}">
+        <view class='ren'>还可投{{checknum}}票</view>
+        <view  class="tpbtn"  bindtap="tp">投票</view>
+    </view>
+    <view wx:if="{{tpset==1}}">
+        <view  class="tpbtn2" >已投票</view>
+    </view>
+    <view wx:if="{{tpset==-1}}">
+        <view class="tpbtn2">已结束</view>
+    </view>
+</view>

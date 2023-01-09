@@ -1,0 +1,82 @@
+/* pages/mykt_more_set/mykt_more_set.wxss */
+.backg{
+    position: absolute;
+    left: 40rpx;
+    top: 2.5%;
+    width: 670rpx;
+    height: 95%;
+    border-radius: 27rpx;
+    background: #9FC1D3;
+    
+}
+.input{
+    position: absolute;
+    left: 105rpx;
+    top: 300rpx;
+    width: 460rpx;
+    height: 86rpx;
+    border-radius: 36rpx;
+    background: #D8D8D8;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 31rpx;
+    text-align: center;
+}
+.title{
+    position: absolute;
+    top:   50rpx;
+    width: 670rpx;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 60rpx;
+    text-align: center;
+}
+.name{
+    position: absolute;
+    left: 105rpx;
+    top:   200rpx;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 40rpx;
+    text-align: center;
+}
+.yqm{
+    position: absolute;
+    left: 105rpx;
+    top: 65%;
+    width: 460rpx;
+    height: 86rpx;
+    border-radius: 21px;
+    line-height: 86rpx;
+    text-align: center;
+    font-size: 50rpx;
+}
+.change{
+    position: absolute;
+    left: 105rpx;
+    top: 80%;
+    width: 460rpx;
+    height: 86rpx;
+    border-radius: 21px;
+    background: #3599EB;
+}
+.js{
+    position: absolute;
+    left: 105rpx;
+    top: 90%;
+    width: 460rpx;
+    height: 86rpx;
+    border-radius: 23px;
+    background: #D8D8D8;
+    border: 1px solid #000000;
+    color: #ff0000;  
+}
+.qrcode{
+    position: absolute;
+    left: 105rpx;
+    top: 30%;
+    width: 460rpx;
+    height: 460rpx;
+    border-radius: 23px;
+    line-height: 400rpx;
+    font-size: 50rpx;
+    text-align: center;
+
+}

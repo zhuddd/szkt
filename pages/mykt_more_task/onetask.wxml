@@ -1,0 +1,17 @@
+
+<view class="frame" style="position: absolute; left: 41rpx; top: 60rpx">
+    <text class="time"></text>
+<scroll-view class="tp_box" scroll-y="{{true}}">
+    <view class="tap" >
+        <view class="title" wx:for="{{task}}" wx:key="name"   >
+                <view wx:if="{{item.lv==-1}}" class="title_txt" bindtap="tap" data-openid="{{item.openid}}"style="color: #ff0000;">{{item.name}}</view>
+                <view wx:if="{{item.lv==0}}" class="title_txt" bindtap="tap" data-openid="{{item.openid}}"                             >{{item.name}}</view>
+                <view wx:if="{{item.lv==1}}" class="title_txt" bindtap="tap" data-openid="{{item.openid}}" style="background: #ff0000;">{{item.name}}</view>
+                <view wx:if="{{item.lv==2}}" class="title_txt" bindtap="tap" data-openid="{{item.openid}}" style="background: #FF6614;">{{item.name}}</view>
+                <view wx:if="{{item.lv==3}}" class="title_txt" bindtap="tap" data-openid="{{item.openid}}" style="background: #F3FA65;">{{item.name}}</view>
+                <view wx:if="{{item.lv==4}}" class="title_txt" bindtap="tap" data-openid="{{item.openid}}" style="background: #91FC3E;">{{item.name}}</view>
+        </view>
+    </view>
+</scroll-view>
+</view>
+

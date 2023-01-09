@@ -1,0 +1,126 @@
+/* pages/joinkt/joinkt.wxss */
+.bj{
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 27rpx;
+  background: #9FC1D3;
+}
+.title{
+    position: absolute;
+    top: 100rpx;
+    width: 100%;
+    text-align: center;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 41rpx;
+  }
+.button{
+  position: absolute;
+  left: 20%;
+  top: 794rpx;
+  width: 60%;
+  height: 86rpx;
+  border-radius: 36rpx;
+  background: #3599EB;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 41rpx;
+  text-align: center;
+  line-height: 86rpx;
+}
+  .yqm{
+    position: absolute;
+    left: 68rpx;
+    top: 461rpx;
+    width: 342rpx;
+    height: 86rpx;
+    border-radius: 36rpx;
+    background: #D8D8D8;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 31rpx;
+    text-align: center;
+  }
+.yqmtxt{
+    position: absolute;
+    left: 51rpx;
+    top: 377rpx;
+    border-radius: 36rpx;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 41rpx;
+    text-align: center;
+} 
+ .qrbutton{
+    left: 188rpx;
+    top: 461rpx;
+    width: 120rpx;
+    height: 86rpx;
+    border-radius: 36rpx;
+    background: #3599EB;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 30rpx;
+    text-align: center;
+  }
+
+/*界面2*/
+
+  .title_b{
+    position: absolute;
+    top: 100rpx;
+    width: 100%;
+    text-align: center;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 41rpx;
+  }
+
+
+.txt{
+  position: relative;
+  left: 10%;
+  top:  2%;
+  width: 80%;
+  height: 80%;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 31rpx;
+}
+.button_c{
+  position: absolute;
+  left: 20%;
+  top: 80%;
+  width: 60%;
+  height: 86rpx;
+  border-radius: 36rpx;
+  background: #3599EB;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 41rpx;
+  text-align: center;
+  line-height: 86rpx;
+}
+.box{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 50%;
+    font-size: 35rpx;
+    overflow: hidden;
+    word-break: break-all;
+    background: #D8D8D8;
+    border-radius: 37rpx;
+}
+.xxbox{
+    position: relative;
+    top:10%;
+    height: 20%;
+}
+.join{
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 70%;
+    border-radius: 36rpx;
+    background: #3599EB;
+    font-size: 35rpx;
+    text-align: center;
+    line-height: 100rpx;
+}

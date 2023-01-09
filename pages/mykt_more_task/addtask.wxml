@@ -1,0 +1,9 @@
+
+<view class="v1" style="position: absolute;">
+    <text class="t2" style="position: absolute;">发布作业</text>
+    <view class="v2" style="position: absolute;">
+        <textarea class="t1" placeholder="请输入作业内容" style="position: absolute;" bindinput="input" maxlength="-1"></textarea>
+        <view class="btn1" bindtap="gotoPage" style="position: absolute;" bindtap="seave"> 发布 </view>
+
+    </view>
+</view>

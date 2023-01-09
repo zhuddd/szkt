@@ -1,0 +1,148 @@
+
+page{
+    background: #D6D6D6;
+}
+.backg{
+    position: absolute;
+    left: 40rpx;
+    top: 2.5%;
+    width: 670rpx;
+    height: 95%;
+    border-radius: 27rpx;
+    background: #9FC1D3;
+    
+}
+
+.title{
+    text-align: center;
+    position: relative;
+    top: 3%;
+    width: 100%;
+    font-size: 50rpx;
+}
+.box{
+    position: absolute;
+    top: 10%;
+    left:20rpx;
+    width: 630rpx;
+    height: 88%;
+    font-size: 35rpx;
+    overflow: hidden;
+    word-break: break-all;
+    background-color: #ededed;
+    border-radius: 37rpx;
+}
+.box2{
+    position: absolute;
+    top: 10%;
+    left:20rpx;
+    width: 630rpx;
+    height: 78%;
+    font-size: 35rpx;
+    overflow: hidden;
+    word-break: break-all;
+    background-color: #ededed;
+    border-radius: 37rpx;
+}
+
+.list{
+    display:flex; 
+    flex-wrap:wrap;
+    position: absolute;
+}
+.people{
+    position: relative;
+    top:15rpx;
+    left: 15rpx;
+    width:150rpx;
+    height: 150rpx;
+    box-sizing: border-box;
+}
+.text{
+    position: absolute;
+    top: 20rpx;
+    left: 20rpx;
+    width:110rpx;
+    height: 110rpx;
+    border-radius: 207rpx;
+    font-family: SourceHanSansCN-Regular;
+    text-align: center;
+    line-height: 120rpx;
+    font-size: 40rpx;
+}
+
+.question{
+    position: relative;
+    font-size: 35rpx; 
+    padding: 30rpx;
+}
+.choosebox{
+    position: relative;
+    top: 30rpx;
+    left: 10rpx;
+    width: 550rpx;
+    margin-top: 40rpx;
+    float: left;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.btn0{
+    position: absolute;
+    top: 92.5%;
+    left: 50rpx;
+    width: 150rpx;
+    height: 80rpx;
+    background: #45b5f1;
+}
+.btn1{
+    position:   absolute;
+    top: 92.5%;
+    left: 260rpx;
+    width: 150rpx;
+    height: 80rpx;
+    background: #45b5f1;
+}
+.btn2{
+    position: absolute;
+    top: 92.5%;
+    right: 50rpx;
+    width: 150rpx;
+    height: 80rpx;
+    background: #45b5f1;
+}
+.btnname{
+    position: absolute;
+    left: 0rpx;
+    width: 100%;
+    text-align: center;
+    font-size: 30rpx;
+}
+.button{
+    position: absolute;
+    top: 92.5%;
+    left: 50rpx;
+    width: 570rpx;
+    height: 80rpx;
+    background: #45b5f1;
+}
+
+
+.xxbox{
+    position: relative;
+    margin-top: 5%;
+    
+}
+.lfthead {
+    position: absolute;
+    left: 5%;
+  }
+.input{
+    position: relative;
+    left: 80rpx;
+    font-size: 35rpx;
+    background: #84CAF6;
+    padding: 10rpx 20rpx 10rpx 20rpx;
+    border-radius: 27rpx;
+    width: 400rpx;
+}

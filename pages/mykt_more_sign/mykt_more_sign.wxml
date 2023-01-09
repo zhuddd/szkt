@@ -1,0 +1,50 @@
+<swiper class="bj">
+    <swiper-item >
+        <view class="backg">
+            <scroll-view class="list" scroll-y="{{true}}">
+                <view class="sign" wx:for="{{lista}}" wx:key="signid" >
+                    <view class="sign_box" bindtap="tap" data-signid="{{item.signid}}" data-end="{{item.signset.end}}">
+                        <view class="sign_txt">
+                            {{item.time}}
+                        </view>
+                        <view wx:if="{{item.signset.end==1}}"style="background:#fa0000" class="end">
+                        已结束
+                        </view>
+                        <view wx:if="{{item.signset.end==0}}"style="background:#faed00" class="end">
+                        未开始
+                        </view>
+                        <view wx:if="{{item.signset.end==2}}"style="background:#36fa00" class="end">
+                        进行中
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+            <view class="title">
+                签到
+            </view>
+        </view>
+        <view class="add_sign" wx:if="{{showadd}}" bindtap="add_tap">+
+        </view>
+    </swiper-item >
+
+    <swiper-item >
+        <view class="backg">
+            <scroll-view class="list" scroll-y="{{true}}">
+                <view class="sign" wx:for="{{listb}}" wx:key="signid" >
+                    <view class="sign_box" bindtap="tap" data-signid="{{item.signid}}" data-signset="{{item.signset}}" >
+                        <view class="sign_txt">
+                            {{item.time}}
+                        </view>
+
+                    </view>
+                </view>
+            </scroll-view>
+            <view class="title">
+                签到预设
+            </view>
+        </view>
+        <view class="add_sign" wx:if="{{showadd}}" bindtap="add_tap">
+        +
+        </view>
+    </swiper-item >
+</swiper>

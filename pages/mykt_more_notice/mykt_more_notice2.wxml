@@ -1,0 +1,16 @@
+<!--pages/mykt_more_notice/mykt_more_notice2.wxml-->
+<view class="backg">
+    <scroll-view class="notice_box" scroll-y="{{true}}">
+        <text class="text">
+            {{data}}
+        </text>
+    </scroll-view>
+    <view class="title">
+        公告
+    </view>
+    <view class="del" wx:if="{{showdel}}" bindtap="del">
+        删除
+    </view>
+</view>
+
+  

@@ -1,0 +1,324 @@
+/* pages/mykt/mykt.wxss */
+page {
+  background: #9FC1D3;
+}
+
+.up-ppt {
+  position: absolute;
+  left: 36rpx;
+  top: 467rpx;
+  width: 659rpx;
+  height: 168rpx;
+  border-radius: 27rpx;
+  background: #D8D8D8;
+  text-align: center;
+  line-height: 168rpx;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 41rpx;
+}
+.lbtn {
+  position: absolute;
+  left: 25rpx;
+  top: 1230rpx;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 27rpx;
+  background: #D8D8D8;
+  text-align: center;
+  line-height: 80rpx;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 30rpx;
+}
+.mbtn {
+  position: absolute;
+  left: 275rpx;
+  top: 1230rpx;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 27rpx;
+  background: #f23c3c;
+  text-align: center;
+  line-height: 80rpx;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 30rpx;
+}
+.rbtn {
+  position: absolute;
+  right: 25rpx;
+  top: 1230rpx;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 27rpx;
+  background: #D8D8D8;
+  text-align: center;
+  line-height: 80rpx;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 30rpx;
+}
+.imgbox{
+  position: absolute;
+  top: 290rpx;
+  left: -290rpx;
+  width: 1325rpx;
+  height: 750rpx;
+
+}
+.imgbox2{
+  position: absolute;
+  top: 0rpx;
+  width: 100%;
+  height: 500rpx;
+  display: flex;
+  font-size: 41rpx;
+  line-height: 500rpx;
+  justify-content: center;
+}
+.ppt2 {
+  position: absolute;
+  width: 1350rpx;
+  height: 750rpx;
+}
+.ppt3 {
+  position: absolute;
+
+  width: 750rpx;
+}
+.inclass{
+  position: absolute;
+  top: 500rpx;
+  width: 100%;
+}
+.pptlistbox {
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 750rpx;
+  height: 1200rpx;
+  box-sizing: border-box;
+}
+.pptlist {
+  top: 0rpx;
+  width: 750rpx;
+  position: relative;
+  box-sizing: border-box;
+}
+.ppt {
+  top: 0rpx;
+  left: 0rpx;
+  width: 600rpx;
+  position: relative;
+}
+.radio{
+  position: relative;
+  right: 5%;
+  margin-top: 35%;
+  float: right;
+  word-wrap: break-word;
+}
+
+.foot {
+  position: absolute;
+  width: 750rpx;
+  height: 8%;
+  background: #D8D8D8;
+  position: fixed;
+  bottom: 0;
+}
+
+.bj {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+.input {
+  border-radius: 27rpx;
+  position: absolute;
+  border: 2rpx solid #000000;
+  left: 5%;
+  top: 15%;
+  width: 70%;
+  height: 70%;
+}
+
+.footinput {
+  background-color: rgb(255, 255, 255);
+  border-radius: 27rpx;
+  position: absolute;
+  border: 2rpx solid #000000;
+  right: 25%;
+  top: 15%;
+  width: 70%;
+  height: 70%;
+  text-align: center;
+  line-height: 200%;
+  font-size: 41rpx;
+}
+
+.footright {
+  background-color: deepskyblue;
+  border-radius: 27rpx;
+  position: absolute;
+  border: 2rpx solid #000000;
+  right: 5%;
+  top: 15%;
+  width: 15%;
+  height: 70%;
+  text-align: center;
+  line-height: 200%;
+  font-size: 41rpx;
+}
+
+.msgbox {
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 100%;
+  height: 1350rpx;
+}
+
+
+
+.msg {
+  width: 100%;
+  position: relative;
+  float: right;
+  word-wrap: break-word;
+
+}
+
+.ritTxt {
+  position: relative;
+  top: 30rpx;
+  right: 10rpx;
+  background: #359e29;
+  padding: 10rpx 20rpx 10rpx 20rpx;
+  color: rgb(0, 0, 0);
+  border-radius: 15rpx 0 15rpx 15rpx;
+  margin-top: 40rpx;
+  float: right;
+  max-width: 500rpx;
+  word-wrap: break-word;
+  text-align: left;
+
+}
+
+.lftTxt {
+  position: relative;
+  top: 30rpx;
+  left: 10rpx;
+  background: #efeeff;
+  padding: 10rpx 20rpx 10rpx 20rpx;
+  color: rgb(0, 0, 0);
+  border-radius: 0rpx 15rpx 15rpx 15rpx;
+  margin-top: 40rpx;
+  float: left;
+  max-width: 500rpx;
+  min-height: 45rpx;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.timedata {
+  position: relative;
+  top: 30rpx;
+  width: 100%;
+  margin-top: 40rpx;
+  float: left;
+  text-align: center;
+  border: 2rpx solid #000000;
+}
+
+.lfthead {
+  position: relative;
+  width: 80rpx;
+  height: 80rpx;
+  top: 10rpx;
+  background: #efeeff;
+  border-radius: 100rpx;
+  margin-top: 40rpx;
+  float: left;
+  word-wrap: break-word;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 20rpx;
+}
+
+.rithead {
+  position: relative;
+  width: 80rpx;
+  height: 80rpx;
+  top: 10rpx;
+  background: #efeeff;
+  border-radius: 100rpx;
+  margin-top: 40rpx;
+  float: right;
+  word-wrap: break-word;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 20rpx;
+}
+
+.nomsg {
+  position: relative;
+  top: 30rpx;
+  width: 100%;
+  margin-top: 40rpx;
+  float: left;
+  text-align: center;
+  border: 2rpx solid #000000;
+}
+
+.end {
+  position: relative;
+  top: 30rpx;
+  height: 150rpx;
+  width: 100%;
+  margin-top: 40rpx;
+  float: left;
+  text-align: center;
+}
+.showksbox{
+  position: absolute;
+  top: 0rpx;
+  left: 40%;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 90rpx;
+  background: #ffffff00;
+}
+.closeksbox{
+  position: absolute;
+  width: 100%;
+  height: 65%;
+  background: #ff000000;
+}
+.ksbox{
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  height: 35%;
+  background: #D8D8D8;
+  display:flex; 
+  flex-wrap:wrap;
+}
+
+.title{    
+  position: relative;
+  width:375rpx;
+  box-sizing: border-box;
+}
+.title_txt{
+  top: 30rpx;
+  left:20rpx;
+  position: absolute;
+  width: 335rpx;
+  height: 180rpx;
+  border-radius: 27rpx;
+  background: #9FC1D3;
+  text-align: center;
+  font-size: 41rpx;
+  line-height: 168rpx;
+}

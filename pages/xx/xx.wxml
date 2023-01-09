@@ -1,0 +1,15 @@
+<view class="bj">
+    <scroll-view class='box' scroll-y="{{true}}" bindscrolltolower="addmoremsg">
+        <view class='item' wx:for="{{msgdata}}" wx:key='index'>
+            <view class='time'>{{item.showtime}}</view>
+            <view class='line'></view>
+            <view class='msg' bindtap="{{item.msg}}" data-classid="{{item.classid}}">
+                <view  wx:if="{{item.msg=='ask'}}" >来自课堂{{item.classname}}的抽问，看看自己有没有被抽到!</view>
+                <view wx:elif="{{item.msg=='notice'}}">课堂{{item.classname}}公告更新了!</view>
+                <view wx:elif="{{item.msg=='sign'}}">课堂{{item.classname}}新增了签到，快去签到吧!</view>
+                <view wx:elif="{{item.msg=='vote'}}">课堂{{item.classname}}新增了投票，快去投票吧!</view>
+            </view>
+            
+        </view>
+    </scroll-view>
+</view>

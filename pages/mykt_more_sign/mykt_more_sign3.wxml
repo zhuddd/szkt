@@ -1,0 +1,30 @@
+<view class="bj">
+    <view class="frame">
+        <text class="qd">新建签到</text>
+        <view class="frame1">
+            <view class="ordinary" bindtap="pt" style="background:{{a}}">普通签到</view>
+            <view class="gesture" bindtap="ss"style="background:{{b}}">手势签到</view>
+            <view class="frame3" wx:if="{{set==2}}">
+            <ssmm bindgetlock="getlock"></ssmm>
+            <view >滑动顺序: {{password}}</view>
+            </view>
+
+            <view class="frame2" wx:if="{{set==1}}">
+                <text class="begin">开始时间：</text>
+                <picker mode="time" value="{{timea}}" start="{{now}}" end="23:59" bindchange="bindTimeChange">
+                    <view class="picker">
+                    {{starttime}}
+                    </view>
+                </picker>
+
+                <text class="end">进行时间：</text>
+                <picker mode="time" value="{{timeb}}" start="00:01" end="23:59" bindchange="bindTimeChange2">
+                <view class="picker2">
+                {{endtime}}
+                </view>
+                </picker>
+            </view>
+            <view class="button" bindtap="next">下一步</view>
+        </view>
+    </view>
+</view>

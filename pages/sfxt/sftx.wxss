@@ -1,0 +1,142 @@
+.bj{
+    position: relative;
+    height: 724px;
+    background: #4CC1F7;
+}
+.input{
+    /*姓名*/
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    width: 300px;
+    height: 37.01px;
+    font-size: 25px;
+}
+.srk1{
+    /*姓名*/
+    position: absolute;
+    left: 35px;
+    top: 40px;
+    width: 300px;
+    height: 57px;
+    border-radius: 15px;
+    background: #D8D8D8;
+    border: 2px solid #000000;
+}
+.input1{
+    /*学号*/
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    width: 300px;
+    height: 37.01px;
+    font-size: 25px;
+}
+.srk2{
+    /*学号*/
+    position: absolute;
+    left: 35px;
+    top: 110px;
+    width: 300px;
+    height: 57px;
+    border-radius: 15px;
+    background: #D8D8D8;
+    border: 2px solid #000000;
+}
+.input2{
+    /*所在学院*/
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    width: 300px;
+    height: 37.01px;
+    font-size: 25px;
+}
+.srk3{
+    /*所在学院*/
+    position: absolute;
+    left: 35px;
+    top: 260px;
+    width: 300px;
+    height: 57px;
+    border-radius: 15px;
+    background: #D8D8D8;
+    border: 2px solid #000000;
+}
+.input3{
+    /*所学专业*/
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    width: 300px;
+    height: 37.01px;
+    font-size: 25px;
+}
+.srk4{
+    /*所学专业*/
+    position: absolute;
+    left: 35px;
+    top: 330px;
+    width: 300px;
+    height: 57px;
+    border-radius: 15px;
+    background: #D8D8D8;
+    border: 2px solid #000000;
+}
+.input4{
+    /*辅导员*/
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    width: 300px;
+    height: 37.01px;
+    font-size: 25px;
+}
+.srk{
+    /*辅导员*/
+    position: absolute;
+    left: 35px;
+    top: 400px;
+    width: 300px;
+    height: 57px;
+    border-radius: 15px;
+    background: #D8D8D8;
+    border: 2px solid #000000;
+}
+.jrzy{
+    /*进入主页*/
+    position: absolute;
+    left: 105px;
+    top: 560px;
+    width: 160px;
+    height: 60px;
+    background: #D8D8D8;
+    border-radius: 15px;
+    font-size: 30px;
+    text-align: center;
+    line-height:58px ;
+    }
+.jrzy:active{
+    background: #858383;
+}
+.xb{
+    /* 性别 */
+    position: absolute;
+    left: 45px;
+    top: 210px;
+    font-size: 25px;
+}
+.nv{
+    /*女*/
+    position: absolute;
+    left: 180px;
+    top:0px;
+    width: 62px;
+}
+.nan{
+    /*男*/
+    position: absolute;
+    left: 80px;
+    top:0px;
+    width: 62px;
+}

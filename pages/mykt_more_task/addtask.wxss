@@ -1,0 +1,50 @@
+/* pages/zuoye1/zuoye1.wxss */
+.v1 {
+  left: 5%;
+  top: 3%;
+  width: 90%;
+  height: 93%;
+  border-radius: 30rpx;
+  background: #9FC1D3;
+}
+
+.v2 {
+  left: 5%;
+  top: 12%;
+  width: 90%;
+  height: 85%;
+  border-radius: 37px;
+  background: #D8D8D8;
+}
+
+.t1 {
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 70%;
+  border: 1px solid #000000;
+  font-size: 40rpx;
+}
+
+.t2 {
+  left: 38%;
+  top: 5%;
+  font-size: 43rpx;
+}
+
+.btn1 {
+  position: absolute;
+  left: 10%;
+  top: 83%;
+  width: 80%;
+  height: 8%;
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 200%;
+  background-color: #0599e8;
+  border-radius: 37rpx;
+}
+
+.btn1:active {
+  background-color: rgb(177, 180, 180);
+}

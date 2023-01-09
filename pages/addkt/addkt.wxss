@@ -1,0 +1,97 @@
+/* pages/addkt/addkt.wxss */
+.bj{
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 27rpx;
+  background: #9FC1D3;
+}
+.cjbutton{
+  position: absolute;
+  left: 20%;
+  top: 85%;
+  width: 60%;
+  height: 86rpx;
+  border-radius: 36rpx;
+  background: #3599EB;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 41rpx;
+  text-align: center;
+  line-height: 86rpx;
+}
+.ktname{
+  position: absolute;
+  left: 20%;
+  top: 15%;
+  width: 60%;
+  height: 86rpx;
+  border-radius: 36rpx;
+  background: #D8D8D8;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 31rpx;
+  text-align: center;
+}
+
+.cjbutton:active{
+    background: #185484;
+}
+.box{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 70%;
+    height: 40%;
+    font-size: 35rpx;
+    overflow: hidden;
+    word-break: break-all;
+    background-color: #ededed;
+    border-radius: 37rpx;
+}
+.xxbox{
+    position: relative;
+    top:5%;
+    height: 120rpx;
+}
+.input{
+    position: absolute;
+    top:8%;
+    left:10%;
+    width: 80%;
+    height: 84%;
+    font-size: 35rpx;
+}
+.del{
+    position: absolute;
+    top:20%;
+    right: 5%;
+    width: 40rpx;
+    height: 40rpx;
+    font-size: 35rpx;
+    background: #ff0000;
+    border-radius: 27rpx;
+    text-align: center;
+    line-height: 35rpx;
+}
+.xx{
+    position: relative;
+    left:5%;
+    width: 80%;
+    height: 90rpx;
+    font-size: 35rpx;
+    overflow: hidden;
+    word-break: break-all;
+    background-color: #84CAF6;
+    border-radius: 37rpx;
+}
+.add{
+    position:relative ;
+    height: 90rpx;
+    left:5%;
+    width: 90%;
+    border-radius: 27rpx;
+    background: #9FC1D3;
+    text-align: center;
+    line-height: 90rpx;
+}

@@ -1,0 +1,25 @@
+<!--pages/mykt_more_set/mykt_more_set.wxml-->
+<view class="backg">
+    <view class="title">
+    课堂设置
+    </view>
+    <view class="name">
+    课堂名称
+    </view>
+    <input value="{{newname}}" class="input" type="text" maxlength="10"  bindinput="input">
+    </input>
+    <image class="qrcode" src="{{qrcode}}" mode="aspectFill"></image>
+    <txt class="yqm" >
+    邀请码           {{yqm}}
+    </txt>
+    <button class="change" bindtap="change" wx:if="{{mylevel=='1'}}">
+    确认修改
+    </button>
+    <button class="js" bindtap="js" wx:if="{{mylevel=='1'}}">
+    解散课堂
+    </button>
+    <button class="js" bindtap="lk" wx:if="{{mylevel!='1'}}">
+    离开课堂
+    </button>
+    <canvas id="qrcode" canvas-id="qrcode"></canvas>
+</view>

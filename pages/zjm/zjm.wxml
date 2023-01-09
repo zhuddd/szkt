@@ -1,0 +1,38 @@
+<view class="zjm">
+    <view class="k1"  bindtap="addkt">
+        创建课堂
+    </view>
+    <view class="k2" bindtap="joinkt">
+        加入课堂
+    </view>
+    <view class="k3">
+        问答悬赏
+    </view>
+    <swiper class="bj" indicator-dots="{{ true }}">
+        <swiper-item wx:if="{{classdata_a.length!=0}}">
+            <view class="type">我教的课</view>
+            <scroll-view class="box" scroll-y="{{true}}">
+                <view class="box2" wx:for="{{classdata_a}}" wx:key="classid">
+                    <view class="classtap" bindtap="classtap" data-classid="{{item.classid}}" data-level="{{item.classlevel}}" >
+                        <view class="classname">{{item.classname}}</view>
+                        <scroll-view scroll-y="{{true}}" class="classset2"> 
+                            <view class="classset3" wx:for="{{item.classclassname}}" wx:key="null">{{item}}</view>
+                        </scroll-view> 
+                    </view>
+                </view>
+            </scroll-view>                
+        </swiper-item>
+                <swiper-item wx:if="{{classdata_b.length!=0}}">
+                <view class="type">我听的课</view>
+            <scroll-view class="box" scroll-y="{{true}}">
+                <view class="box2" wx:for="{{classdata_b}}" wx:key="classid">
+                    <view class="classtap" bindtap="classtap" data-classid="{{item.classid}}" data-level="{{item.classlevel}}" >
+                        <view class="classname">{{item.classname}}</view>
+                        <view class="classset" wx:if="{{item.classlevel==2}}">管理员</view>
+                        <view class="classset" wx:if="{{item.classlevel==3}}">成员</view>
+                    </view>
+                </view>
+            </scroll-view>                
+        </swiper-item>
+    </swiper>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/mykt_more_vote/mykt_more_vote3.wxml-->
+<view class="backg">
+    <scroll-view class="tp_box" scroll-y="{{true}}">
+        <view class="xxbox" wx:for="{{tpdata}}" wx:key="id">
+                <view class="xx" >
+                <input class="input"  type="text" bindinput="input" data-id="{{item.id}}" value='{{item.data}}'>
+                
+                </input>
+                </view>
+                <view class="del" bindtap="delxx" data-id="{{item.id}}">x
+                </view>
+        </view>
+        <view class="xxbox" >
+            <view class="add" bindtap="add">
+            添加选项
+            </view>
+        </view>
+    </scroll-view>
+    <input placeholder="新建投票" bindinput="title" value="{{title}}"class="title">
+    </input>
+    <view class="next" bindtap="next">
+    下一步
+    </view>
+</view>

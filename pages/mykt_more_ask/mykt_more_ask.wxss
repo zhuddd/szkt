@@ -1,0 +1,111 @@
+/* pages/mykt_more_ask/mykt_more_ask.wxss */
+page{
+    background: #D6D6D6;
+}
+.backg{
+    position: absolute;
+    left: 40rpx;
+    top: 2.5%;
+    width: 670rpx;
+    height: 95%;
+    border-radius: 27rpx;
+    background: #9FC1D3;
+    
+}
+
+.title{
+    text-align: center;
+    position: relative;
+    top: 3%;
+    width: 100%;
+    font-size: 50rpx;
+}
+
+.sj{
+    position: absolute;
+    left: 35rpx;
+    margin-top: 150rpx;
+    width: 190rpx;
+    height: 120rpx;
+    border-radius: 63rpx;
+    text-align: center;
+    line-height: 120rpx;
+    font-size: 40rpx;
+}
+.sx{
+    position: absolute;
+    left:240rpx;
+    margin-top: 150rpx;
+    width: 190rpx;
+    height: 120rpx;
+    border-radius: 63rpx;
+    text-align: center;
+    line-height: 120rpx;
+    font-size: 40rpx;
+}
+.qc{
+    position: absolute;
+    left:445rpx;
+    margin-top: 150rpx;
+    width: 190rpx;
+    height: 120rpx;
+    border-radius: 63rpx;
+    text-align: center;
+    line-height: 120rpx;
+    font-size: 35rpx;
+    color:red;
+    background:#D8D8D8
+}
+.next{
+    position: absolute;
+    left: 35rpx;
+    margin-top: 300rpx;
+    width: 600rpx;
+    height: 100rpx;
+    border-radius: 63rpx;
+    background: #1EA9FF;
+    text-align: center;
+    line-height:100rpx;
+    font-size: 40rpx;
+}
+
+.set{
+    position: relative;
+    width: 100%;
+    height: 30%;
+
+}
+.box{
+    position: relative;
+    width: 580rpx;
+    left: 45rpx;
+    top:0%;
+    bottom: 0%;
+    margin-top: 100rpx;
+
+}
+
+.list{
+    display:flex; 
+    flex-wrap:wrap;
+    position: absolute;
+}
+.people{
+    position: relative;
+    width:145rpx;
+    height: 145rpx;
+    box-sizing: border-box;
+}
+.text{
+    position: absolute;
+    top: 0;
+    left: 15rpx;
+    width:115rpx;
+    height: 115rpx;
+    border-radius: 207rpx;
+    background: #c8c8c8;
+    font-family: SourceHanSansCN-Regular;
+    text-align: center;
+    line-height: 120rpx;
+    font-size: 40rpx;
+}

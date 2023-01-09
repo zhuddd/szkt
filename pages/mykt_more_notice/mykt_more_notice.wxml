@@ -1,0 +1,17 @@
+<!--pages/mykt_more_notice/mykt_more_notice.wxml-->
+<view class="backg">
+    <scroll-view class="list" scroll-y="{{true}}">
+        <view class="notice" wx:for="{{noticeList}}" wx:key="data" >
+            <view class="notice_box" bindtap="tap" data-data="{{item.data}}" data-date="{{item.dateid}}">
+                <view class="notice_txt">
+                    {{item.data}}
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="title">
+        公告
+    </view>
+</view>
+<view class="add_notice" wx:if="{{showadd}}" bindtap="add_tap">+
+</view>

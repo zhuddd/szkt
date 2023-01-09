@@ -1,0 +1,26 @@
+<!--pages/mykt_more_test/mykt_more_test.wxml-->
+<view class="backg">
+    <scroll-view class="list" scroll-y="{{true}}">
+        <view class="test" wx:for="{{testlist}}" wx:key="id" >
+            <view class="test_box" bindtap="tap" data-testid="{{item.testid}}" data-set="{{item.set}}">
+                <view class="test_name">
+                    {{item.titel}}
+                </view>
+                <view class="test_content">
+                    {{item.num}}
+                </view>
+                <view class="test_set" wx:if="{{item.set=='1'}}" style="background:#36fa00;">
+                    进行中
+                </view>
+                <view class="test_set" wx:else style="background:#fa0000;">
+                    已结束
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="title">
+        测试
+    </view>
+</view>
+<view class="add_test" wx:if="{{showadd}}" bindtap="add_tap">+
+</view>

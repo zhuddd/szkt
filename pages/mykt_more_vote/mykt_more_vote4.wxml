@@ -1,0 +1,53 @@
+<!--pages/mykt_more_vote/mykt_more_vote4.wxml-->
+<view class="backg">
+    <view class="tp_box" >
+        <view class="tptext">
+        每人票数
+        </view>
+        <view class="switch" bindtap="show">
+            <view class="select_one">
+            {{ps}}
+            </view>
+        </view>
+
+
+        <scroll-view class="select_box" wx:if="{{choose}}" scroll-y="{{true}}" bindtap="close">
+            <view wx:for="{{num}}" wx:key='null'>
+                <view class="select_one" bindtap="mySelect" data-ps="{{item}}">
+                {{item}}
+                </view>
+            </view>
+        </scroll-view>
+
+
+        <view class="fabu" bindtap="bindfabu" style="background:{{backgrounda}}">
+        发布后立即开始
+        </view>
+        <view class="save" bindtap="bindsave"style="background:{{backgroundb}}">
+        保存为预设
+        </view>
+
+    </view>
+<view class="next" bindtap="next">
+    {{fabu_save}}
+</view>
+<view class="title">
+    {{tpdata.title}}
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

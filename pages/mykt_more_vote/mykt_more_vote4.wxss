@@ -1,0 +1,104 @@
+/* pages/mykt_more_vote/mykt_more_vote4.wxss */
+.backg{
+    position: absolute;
+    left: 40rpx;
+    top: 2.5%;
+    width: 670rpx;
+    height: 95%;
+    border-radius: 27rpx;
+    background: #9FC1D3;
+}
+.tp_box{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    width: 94%;
+    height: 77%;
+    font-size: 35rpx;
+    overflow: hidden;
+    word-break: break-all;
+    background-color: #ededed;
+    border-radius: 37rpx;
+}
+.title{
+    position: absolute;
+    left: 10%;
+    top: 3%;
+    width: 80%;
+    font-size: 40rpx;
+}
+.select_box {
+    padding: 0 20rpx;
+    top: 30%;
+    width: 200rpx;
+    height: 30%;
+    left:50%;
+    border-radius: 24rpx;
+    background: #FFFFFF;
+    position: relative;
+    z-index: 1;
+    font-size: 30rpx;
+}
+.select_one {
+    text-align: center;
+    height: 60rpx;
+    position: relative;
+    line-height: 60rpx;
+    border-bottom: 2rpx solid rgb(0, 0, 0);
+}
+.switch{
+    padding: 0 20rpx;
+    position: absolute;
+    left:50%;
+    top: 30%;
+    width: 200rpx;
+    height: 70rpx;
+    border-radius: 24rpx;
+    background: #ffffff;
+}
+.tptext{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    height: 70rpx;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 45rpx;
+    color: #000000;
+}
+.fabu{
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    width: 70%;
+    height: 80rpx;
+    border-radius: 124rpx;
+    text-align: center;
+    line-height: 80rpx;
+}
+.save{
+    position: absolute;
+    left: 15%;
+    top: 65%;
+    width: 70%;
+    height: 80rpx;
+    border-radius: 124rpx;
+    text-align: center;
+    line-height: 80rpx;
+}
+.next{
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    width: 80%;
+    height: 7%;
+    border-radius: 63rpx;
+    background: #1EA9FF;
+    box-sizing: border-box;
+    border: 2rpx solid #000000;
+    text-align: center;
+    line-height: 90rpx;
+    font-size: 45rpx;
+}
+.next:active{
+    background: #009dff;
+}

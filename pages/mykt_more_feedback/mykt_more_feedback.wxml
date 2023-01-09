@@ -1,0 +1,17 @@
+<!--pages/mykt_more_notice/mykt_more_notice.wxml-->
+<view class="backg">
+    <scroll-view class="list" scroll-y="{{true}}">
+        <view class="fb" wx:for="{{fb}}" wx:key="data" >
+            <view class="fb_box" bindtap="tap"  data-dateid="{{item.dateid}}">
+                <view class="fb_txt">
+                    {{item.data}}
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="title">
+        学生反馈
+    </view>
+</view>
+<view class="add_feedback" wx:if="{{showadd}}" bindtap="add_tap">+
+</view>

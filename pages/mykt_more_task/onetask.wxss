@@ -1,0 +1,82 @@
+page{
+    background: #D6D6D6;
+}
+.frame{
+    /* 矩形 45 */
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 670rpx;
+    height: 90%;
+    border-radius: 27rpx;
+    background: #9FC1D3;
+}
+.time{
+    position: absolute;
+    left: 10%;
+    top: 4%;
+    width: 175rpx;
+    height: 56rpx;
+    font-size: 40rpx;
+}
+.quantity{
+    position: absolute;
+    left: 62%;
+    top: 4%;
+    width: 300rpx;
+    height: 56rpx;
+    font-size: 40rpx;
+}
+.button{
+    position: absolute;
+    left: 30%;
+    top: 86.5%;
+    width: 300rpx;
+    height: 110rpx;
+    border-radius: 23rpx;
+    background: #D4D4D4;
+    box-sizing: border-box;
+    border: 1px solid #FF0000;
+    text-align: center;
+    line-height: 100rpx;
+    font-size: 45rpx;
+    color: #FF0000;
+}
+
+.tp_box{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    width: 94%;
+    height: 80%;
+    font-size: 35rpx;
+    overflow: hidden;
+    word-break: break-all;
+    background-color: #ededed;
+    border-radius: 37rpx;
+}
+.tap{
+    position: absolute;
+    top:5%;
+    box-sizing: border-box;
+    display:flex; 
+    flex-wrap:wrap;
+}
+.title{    
+    position: relative;
+    width:315rpx;
+    height: 170rpx;
+    box-sizing: border-box;
+}
+.title_txt{
+    position:absolute ;
+    height: 120rpx;
+    left:31.5rpx;
+    width: 252rpx;
+    border-radius: 27rpx;
+    text-align: center;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 41rpx;
+    line-height: 120rpx;
+    border: 1px solid #000000;
+}

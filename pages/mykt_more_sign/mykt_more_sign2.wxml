@@ -1,0 +1,17 @@
+
+<view class="frame" style="position: absolute; left: 41rpx; top: 60rpx">
+    <text class="time">签到</text>
+<scroll-view class="tp_box" scroll-y="{{true}}">
+    <view class="tap" >
+        <view class="title" wx:for="{{memberdata}}" wx:key="name"   >
+            <view class="title_txt" bindlongpress="tap" data-openid="{{item.openid}}">
+                <view wx:if="{{item.sign==0}}" style="color: #ff0000;">{{item.name}}</view>
+                <view wx:if="{{item.sign==1}}" style="color: #00ff00;">{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
+</view>
+
+<view wx:if="{{end==0}}" class="button" bindtap="end" >结束签到</view>
+<view wx:if="{{end==1}}" class="button"  >已结束</view>

@@ -1,0 +1,8 @@
+<!--pages/mykt_more/mykt_more.wxml-->
+<view class="tap" >
+    <view class="title" wx:for="{{tap_list}}" wx:key="name"   >
+        <view class="title_txt" bindtap="tap" data-url="{{item.url}}">
+            {{item.name}}
+        </view>
+    </view>
+</view>

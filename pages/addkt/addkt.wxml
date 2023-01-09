@@ -1,0 +1,33 @@
+<!--pages/addkt/addkt.wxml-->
+<view>
+
+    <view class="bj">
+        <button bindtap="jump" class="cjbutton">
+        创建课堂
+        </button>
+    </view>
+
+     <input placeholder="请输入课堂名称" bindinput="input" type="text" class="ktname" maxlength="10" selection-start="2" selection-end="12">  
+     </input>
+   
+   <scroll-view class="box" scroll-y="{{true}}">
+        <view class="xxbox" wx:for="{{class_class_data}}" wx:key="class_class_id">
+                <view class="xx" >
+                <input placeholder="请输入班级名称" class="input"  type="text" bindinput="class_name" data-id="{{item.class_class_id}}" >
+                </input>
+                </view>
+                <view class="del" bindlongpress="del" data-id="{{item.class_class_id}}">x
+                </view>
+        </view>
+        <view class="xxbox" >
+            <view class="add" bindtap="add">
+            添加班级
+            </view>
+        </view>
+    </scroll-view>
+
+
+</view>
+
+
+

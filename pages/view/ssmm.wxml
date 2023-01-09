@@ -1,0 +1,7 @@
+<canvas canvas-id="canvas" id="canvas" class="canvas w100 h100" bindtouchstart="onTouchStart" bindtouchmove="onTouchMove" bindtouchend="onTouchEnd">
+      <view class="flexCenter w100 h100">
+        <view class="flexCenter w33 h33" wx:for="{{arrState}}" wx:key="index">
+          <image class="circle" mode="scaleToFill" src="{{item ? '../resource/lock/shoushi1_Sel@3x.png' : '../resource/lock/shoushi1@3x.png'}}" style="width:120rpx;height:120rpx;"></image>
+        </view>
+      </view>
+    </canvas>

@@ -1,0 +1,22 @@
+<!--pages/mykt_more_notice/mykt_more_notice.wxml-->
+<view class="backg">
+    <scroll-view class="list" scroll-y="{{true}}">
+        <view class="file" wx:for="{{filelist}}" wx:key="time" >
+            <view class="file_box" bindtap="download" data-size="{{item.size}}" data-md5="{{item.md5}}" data-filename="{{item.filename}}" data-time="{{item.time}}" bindlongpress="delfile">
+                <scroll-view scroll-y="true" class="file_txt" >
+                    {{item.filename}}
+                </scroll-view>
+                <view class="isdown" >
+                    {{item.isdown}}
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="title">
+      资源管理
+    </view>
+</view>
+
+<view class="add_file" wx:if="{{showadd}}" bindtap="choose">+
+</view>
+

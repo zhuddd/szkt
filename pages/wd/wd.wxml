@@ -1,0 +1,17 @@
+<view class="bj">
+    <view class="k">
+        <text class="jf">个人积分：{{jf}}</text>
+        <text class="dj">Lv:{{level}}</text>
+        <view class="lv"></view>
+        <view class="lv1" style="width:{{qqq}}"></view>
+    </view>
+    <view class="k1" bindtap="gotogrxx">
+        <text class="grxx">个人信息</text>
+    </view>
+    <view class="k2" bindtap="tcdl">
+        <text class="tcdl">退出登录</text>
+    </view>
+
+
+</view>
+

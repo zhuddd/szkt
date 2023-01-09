@@ -1,0 +1,15 @@
+<!--pages/mykt_more_member/mykt_more_member_class.wxml-->
+<view class="backg">
+    <scroll-view class="list" scroll-y="{{true}}">
+        <view class="class" wx:for="{{classlist}}" wx:key="data" >
+            <view class="class_box" bindtap="tap" data-classclassid="{{item.class_class_id}}">
+                <view class="class_txt">
+                    {{item.name}}
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="title">
+        班级
+    </view>
+</view>

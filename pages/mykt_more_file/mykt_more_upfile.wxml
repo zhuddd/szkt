@@ -1,0 +1,2 @@
+<!--pages/mykt_more_file/mykt_more_upfile.wxml-->
+<web-view src="{{fileurl}}" class="web" bindmessage="msgHandler"></web-view>
